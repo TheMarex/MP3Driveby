@@ -207,10 +207,8 @@ class AudioCapture:
         dst = iph.get_ip_dst()
 
         if self._is_post(payload):
-            print "Got post!"
             self._next = True
         elif self._is_audio(payload) and self._next:
-            print "Found audio!"
             self._next = False
             port = tcph.get_th_dport()
             job = Job(self, src, dst, port)
