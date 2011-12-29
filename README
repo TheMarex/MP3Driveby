@@ -1,0 +1,1 @@
+Change global variable INTERFACE in driveby.py and run with root rights. The package python-pcapy is required.
